@@ -1,31 +1,21 @@
 # Add  code here!
 require "pry"
 def prime?(num)
-  answer=true
   if num<=1
-    answer= false
+    false
   elsif num==2 || num==3
-    answer=true
+    true
   elsif num%2==0 || num%3==0
-    answer= false
+    false
   end
   counter=5
   while ((counter**2)) <=num
-    puts num%counter
     num%counter+2
       if num%counter==0 || num%(counter+2)==0
-        counter+=6
-        puts "block4"
-        puts "c1 #{counter}"
-        answer= false
+        false
       end
     counter+=6
-    puts "block5"
     end
-  puts "block6"
-  puts "c2 #{counter}"
-  puts answer
-  return answer
 end
 
 # puts prime?(-1)
