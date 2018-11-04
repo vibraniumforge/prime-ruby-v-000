@@ -16,6 +16,7 @@ def prime?(num)
       end
     counter+=6
     end
+    true
 end
 
 # puts prime?(-1)
