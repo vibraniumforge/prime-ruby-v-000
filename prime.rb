@@ -10,13 +10,11 @@ def prime?(num)
   end
   counter=5
   while ((counter**2)) <=num
-    num%counter+2
       if num%counter==0 || num%(counter+2)==0
         false
       end
     counter+=6
     end
-    # true
 end
 
 # puts prime?(-1)
